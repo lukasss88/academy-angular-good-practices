@@ -1,5 +1,5 @@
 (function(){
-
+    'use strict';
     function searchDriver() {
         return function (text)
         {

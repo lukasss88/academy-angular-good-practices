@@ -1,5 +1,5 @@
 (function(){
-
+    'use strict';
     function GetDriverInfoService($http) {
         var driverData = {};
 
@@ -21,13 +21,13 @@
         driverData.getDriverInfo = function(name){
             return $http.get('http://ergast.com/api/f1/2013/drivers/' + name + '/driverStandings.json').then(function (result)
             {
-                return result.data
+                return result.data;
             });
         };
 
         return driverData;
     }
 
-    angular.module('app').factory('GetDriverInfoService', ['$http', GetDriverInfoService])
+    angular.module('app').factory('GetDriverInfoService', ['$http', GetDriverInfoService]);
 })();
 

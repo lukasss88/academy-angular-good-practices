@@ -1,5 +1,5 @@
 (function(){
-
+    'use strict';
     function SearchDriversController (GetDriverInfoService) {
 
         var ctrl = this;
@@ -20,6 +20,6 @@
         });
     }
 
-    angular.module('app').controller('SearchDriversController', ['GetDriverInfoService', SearchDriversController])
+    angular.module('app').controller('SearchDriversController', ['GetDriverInfoService', SearchDriversController]);
 
 })();

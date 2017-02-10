@@ -1,5 +1,5 @@
 (function(){
-
+    'use strict';
     function DriverController ($routeParams, GetDriverInfoService){
 
         var ctrl = this;
@@ -16,6 +16,6 @@
             ctrl.races = response.MRData.RaceTable.Races;
         });
     }
-    angular.module('app').controller('DriverController', ['$routeParams', 'GetDriverInfoService', DriverController] )
+    angular.module('app').controller('DriverController', ['$routeParams', 'GetDriverInfoService', DriverController] );
 
 })();
